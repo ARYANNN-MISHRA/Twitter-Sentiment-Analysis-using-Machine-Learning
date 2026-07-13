@@ -49,6 +49,23 @@ N-gram Range: (1,2)
 
 This converts tweets into numerical vectors suitable for Machine Learning models.
 
+Model
+
+Bernoulli Naive Bayes
+
+The model was trained on TF-IDF features and evaluated on a held-out test dataset.
+
+Results
+Metric	Score
+Accuracy	76.65%
+Precision	0.77
+Recall	0.77
+F1 Score	0.77
+
+Test Dataset Size:
+
+320,000 tweets
+
 Key Skills Demonstrated
 Data Cleaning
 Text Preprocessing
