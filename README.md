@@ -6,7 +6,46 @@ This project implements a Machine Learning-based sentiment analysis system to cl
 It demonstrates an end-to-end Natural Language Processing (NLP) pipeline for analyzing social media text and extracting sentiment-based insights.
 
 ---
+# Twitter Sentiment Analysis
 
+A sentiment classification project analyzing 1.6 million tweets to predict positive or negative sentiment, comparing multiple machine learning models.
+
+## Overview
+This project uses the Sentiment140 dataset to build and evaluate text classification models that predict tweet sentiment (positive/negative). The pipeline covers text preprocessing, TF-IDF feature extraction, multi-model training, and performance comparison.
+
+## Dataset
+- **Source:** Sentiment140 (1.6M labeled tweets)
+- **Labels:** Binary — Negative (0), Positive (1)
+- **Split:** 80% train / 20% test (1.28M train, 320K test)
+
+## Approach
+1. **Data Cleaning:** Removed neutral-class rows, mapped polarity labels, normalized text casing
+2. **Feature Extraction:** TF-IDF vectorization with unigrams + bigrams (top 5000 features)
+3. **Model Training:** Trained and compared three classifiers:
+   - Bernoulli Naive Bayes
+   - Logistic Regression
+   - Linear SVM
+4. **Evaluation:** Accuracy, precision, recall, F1-score, and confusion matrix
+
+## Results
+
+| Model | Accuracy |
+|---|---|
+| **Logistic Regression** | **79.54%** |
+| Linear SVM | 79.53% |
+| Bernoulli Naive Bayes | 76.65% |
+
+Logistic Regression and Linear SVM performed near-identically and both outperformed Naive Bayes by ~3 percentage points.
+
+## Visualizations
+- Confusion matrix for the best-performing model
+- Word clouds highlighting frequent terms in positive vs. negative tweets
+
+## Tools Used
+Python, Pandas, Scikit-learn, TF-IDF, Matplotlib, Seaborn, WordCloud
+
+## Files
+- `TwitterSentiment.ipynb` — full notebook with code, outputs, and visualizations
 ## Problem Statement
 Social media platforms generate millions of opinions every day, making manual analysis of this data impossible. The objective of this project is to automatically determine whether a tweet expresses a positive or negative sentiment using Machine Learning classification techniques.
 
