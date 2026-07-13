@@ -70,9 +70,9 @@ The Bernoulli Naive Bayes model achieved consistent performance across all major
 ---
 
 ## Key Skills Demonstrated
-*   Natural Language Processing (NLP)
-*   Machine Learning Classification
-*   Text Preprocessing & Data Cleaning
-*   Feature Engineering (TF-IDF Vectorization)
-*   Model Training & Evaluation
-*   Data Analysis
+1   Natural Language Processing (NLP)
+2  Machine Learning Classification
+3  Text Preprocessing & Data Cleaning
+4  Feature Engineering (TF-IDF Vectorization)
+5  Model Training & Evaluation
+6  Data Analysis
